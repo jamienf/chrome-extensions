@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Dice</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="quick-actions">
+      <button class="dice-button" data-value="6">d6</button>
+      <button class="dice-button" data-value="12">d12</button>
+      <button class="dice-button" data-value="20">d20</button>
+      <button class="dice-button" data-value="100">d100</button>
+    </div>
+    <div class="input-container">
+      <input type="text" id="inputField" placeholder="Enter numbers or strings">
+    </div>
+    <div class="button-container">
+      <button id="rollButton">Roll</button>
+    </div>
+    <p id="result" class="result"></p>
+    <p class="instructions">Enter one or more numbers or strings in the text field below. Separate multiple entries with commas.</p>
+     <p class="instructions">Click on a dice button to roll a random number based on the selected dice type.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
