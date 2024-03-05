@@ -3,6 +3,8 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     groupTabs();
   } else if (request.action === "closeDuplicates") {
     closeDuplicates();
+  } else if (request.action === "sortTabsByOpenOrder") {
+    sortTabsByOpenOrder();
   } else if (request.action === "saveAndClose") {
     saveAndClose();
   }
@@ -75,6 +77,18 @@ function saveAndClose() {
             chrome.tabs.create({}); // This will create a new tab
           }
         });
+      });
+    });
+  });
+}
+
+function sortTabsByOpenOrder() {
+  chrome.windows.getCurrent({populate: true}, function(currentWindow) {
+    chrome.tabs.query({windowId: currentWindow.id}, function(tabs) {
+      let sortedTabs = tabs.sort((a, b) => a.id - b.id);
+      
+      sortedTabs.forEach((tab, index) => {
+        chrome.tabs.move(tab.id, {index: index});
       });
     });
   });
