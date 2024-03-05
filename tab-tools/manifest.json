@@ -3,7 +3,7 @@
   "name": "Tab Cleanup Tool",
   "version": "1.0",
   "description": "Group tabs by domain, close duplicates, and save tab lists before closing.",
-  "permissions": ["tabs", "tabGroups", "storage", "activeTab", "bookmarks"],
+  "permissions": ["tabs", "tabGroups", "bookmarks"],
   "background": {
     "service_worker": "background.js"
   },
