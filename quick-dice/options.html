@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: center;
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Button Colors</h1>
+  <table>
+    <tr>
+      <th>Die</th>
+      <th>Text Color</th>
+      <th>Background Color</th>
+    </tr>
+    <tr>
+      <td>d6</td>
+      <td><input type="color" id="d6Color"></td>
+      <td><input type="color" id="d6BackgroundColor"></td>
+    </tr>
+    <tr>
+      <td>d12</td>
+      <td><input type="color" id="d12Color"></td>
+      <td><input type="color" id="d12BackgroundColor"></td>
+    </tr>
+    <tr>
+      <td>d20</td>
+      <td><input type="color" id="d20Color"></td>
+      <td><input type="color" id="d20BackgroundColor"></td>
+    </tr>
+    <tr>
+      <td>d100</td>
+      <td><input type="color" id="d100Color"></td>
+      <td><input type="color" id="d100BackgroundColor"></td>
+    </tr>
+    <tr>
+      <td>Roll</td>
+      <td><input type="color" id="rollColor"></td>
+      <td><input type="color" id="rollBackgroundColor"></td>
+    </tr>
+  </table>
+  <button id="saveButton">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>
+

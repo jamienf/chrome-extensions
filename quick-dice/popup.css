@@ -1,3 +1,5 @@
+/* popup.css */
+
 .container {
   width: 250px;
   padding: 20px;
@@ -10,8 +12,6 @@
 
 .quick-actions {
   margin-bottom: 10px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
 }
 
 .input-container {
@@ -31,32 +31,34 @@
   height: 40px;
   margin: 0 5px;
   padding: 0;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .dice-button:hover {
-  background-color: #0056b3;
+  background-color: #d3d3d3;
+  color: #fff;
 }
 
 button {
-  width: 100%;
+  width: 50%;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #d3d3d3;
+  color: #fff;
 }
 
 .result {
   font-size: 24px;
   margin-top: 20px;
 }
-

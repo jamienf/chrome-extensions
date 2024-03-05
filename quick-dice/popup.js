@@ -3,6 +3,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const rollButton = document.getElementById('rollButton');
   const resultDisplay = document.getElementById('result');
   const diceButtons = document.querySelectorAll('.dice-button');
+  
+  // Retrieve saved colors from localStorage
+  const d6Color = localStorage.getItem('d6Color');
+  const d12Color = localStorage.getItem('d12Color');
+  const d20Color = localStorage.getItem('d20Color');
+  const d100Color = localStorage.getItem('d100Color');
+  const rollColor = localStorage.getItem('rollColor');
+
+  // Apply colors to buttons
+  document.getElementById('d6Button').style.borderColor = d6Color;
+  document.getElementById('d6Button').style.color = d6Color;
+
+  document.getElementById('d12Button').style.borderColor = d12Color;
+  document.getElementById('d12Button').style.color = d12Color;
+
+  document.getElementById('d20Button').style.borderColor = d20Color;
+  document.getElementById('d20Button').style.color = d20Color;
+
+  document.getElementById('d100Button').style.borderColor = d100Color;
+  document.getElementById('d100Button').style.color = d100Color;
+
+  document.getElementById('rollButton').style.borderColor = rollColor;
+  document.getElementById('rollButton').style.color = rollColor;
 
   diceButtons.forEach(button => {
     button.addEventListener('click', function () {
